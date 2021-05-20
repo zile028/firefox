@@ -7,4 +7,71 @@
 /* BASIC STYLE */
 
 /* ----------------------------------- */
-/* GLOBAL */
+/* nav */
+nav {
+  @include flex;
+  article {
+    @include flex($x: flex-start, $y: center);
+    font-weight: 600;
+    ul {
+      @include flex($x: flex-start);
+      margin-left: 40px;
+      font-size: 1rem;
+      li {
+        margin-right: 40px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    a {
+      &:hover {
+        color: $plava;
+      }
+    }
+  }
+  .logo {
+    font-size: 1.2rem;
+    position: relative;
+    padding-left: 2em;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1.5em;
+      width: 1.5em;
+      background-image: url(../img/logo-nav.png);
+      @include bgBasic;
+    }
+  }
+  & > a {
+    border: 2px solid $plava;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 0.4em 3em;
+    color: $plava;
+    font-size: 1rem;
+    &:hover {
+      background-color: $plava;
+      color: $bela;
+    }
+  }
+}
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */
+/* nav */

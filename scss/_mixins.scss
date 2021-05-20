@@ -1,10 +1,15 @@
 // MIXINS
-@mixin flex($justify: space-between, $align: stretch, $direction: row) {
+@mixin flex($x: space-between, $y: stretch, $dir: row) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: $justify;
-  align-items: $align;
-  flex-direction: $direction;
+  flex-direction: $dir;
+  @if ($dir == row) {
+    justify-content: $x;
+    align-items: $y;
+  } @else if($dir == column) {
+    justify-content: $y;
+    align-items: $x;
+  }
 }
 
 @mixin bgBasic($position: center, $size: cover) {
