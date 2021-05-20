@@ -60,7 +60,18 @@ nav {
     }
   }
 }
-/* nav */
+
+/* header */
+header {
+  hgroup {
+    @include flex($x: center, $y: center, $dir: column);
+    height: 100vh;
+    text-align: center;
+  }
+  img {
+    width: 400px;
+  }
+}
 /* nav */
 /* nav */
 /* nav */
